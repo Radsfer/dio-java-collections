@@ -20,7 +20,7 @@ O curso tem como intuito de ensinar mais a respeito do funcionamento e bibliotec
 - O núcleo principal das coleções é formado pelas interfaces da figura a abaixo, essas interfaces permitem manipular a coleção independente do nível de detalhe que elas representam.
 Temos quatro grandes tipos de coleções: List _(lista)_, Set _(conjunto)_, Queue _(fila)_ e Map _(mapa)_, a partir dessas interfaces, temos muitas subclasses concretas que implementam varias formas diferentes de se trabalhar com cada coleção.
 
-![Hierarquia_Java](https://data-flair.training/blogs/wp-content/uploads/sites/2/2018/03/hierarchy-of-collection-framework-in-java.webp)
+ ![Hierarquia Java](https://raw.githubusercontent.com/cami-la/collections-java-api-2023/master/assets/image/collection-framework.png)
 
 - Todas as interfaces e classes são encontradas dentro do pacote (package) `java.util`.
 - Embora a interface `Map` não ser filha direta da interface Collection ela também é considerada uma coleção devido a sua função.
