@@ -1,4 +1,4 @@
-package introducao.list.ordenanumeros;
+package introducao.list.somanumeros;
 
 import java.util.ArrayList;
 import java.util.List;
