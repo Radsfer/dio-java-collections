@@ -186,6 +186,28 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 2. **LinkedList**: O LinkedList é uma implementação da interface List que armazena os elementos em uma lista duplamente vinculada. Cada elemento contém referências para o elemento anterior e próximo na lista. A principal vantagem do LinkedList é a eficiência na adição ou remoção de elementos no início ou no final da lista, pois não é necessário realocar elementos. No entanto, o acesso aos elementos por meio de índices é mais lento, pois requer percorrer a lista até o elemento desejado.
 3. **Vector**: O Vector é uma implementação antiga da interface List que é semelhante ao ArrayList, mas é sincronizada, ou seja, é thread-safe. Isso significa que várias threads podem manipular um objeto Vector ao mesmo tempo sem causar problemas de concorrência. No entanto, essa sincronização adiciona uma sobrecarga de desempenho, tornando o Vector menos eficiente do que o ArrayList em cenários em que a concorrência não é um problema. Por esse motivo, o uso do Vector é menos comum em aplicações modernas.
 
+### 3. Interface
+
+- A interface Set é uma coleção que não pode conter elementos duplicados.
+Essa interface representa o conceito matemático de um conjunto e é usada para representar conjuntos, como um baralho de cartas.
+- A plataforma Java possui três implementações de `Set` de uso geral: `HashSet`, `TreeSet` e `LinkedHashSet`.
+- A interface `Set` não permite acesso aleatório a um elemento na coleção.
+- Para percorrer os elementos de um `Set`, você pode usar um iterador ou um loop `foreach`.
+
+---
+
+  HashSet: O HashSet é uma implementação da interface Set que armazena os elementos em uma tabela hash. Ele não mantém uma ordem específica dos elementos. A principal vantagem do HashSet é que ele oferece um desempenho de busca muito eficiente, pois usa funções hash para indexar os elementos. No entanto, a ordem em que os elementos são adicionados pode não ser preservada ao percorrer o conjunto.
+
+---
+
+  TreeSet: O TreeSet é uma implementação da interface Set que armazena os elementos em uma árvore binária balanceada. Isso significa que os elementos são armazenados em uma ordem classificada e são mantidos automaticamente em ordem crescente. A principal vantagem do TreeSet é que os elementos são sempre retornados na ordem classificada, o que facilita a obtenção de elementos em uma determinada ordem. No entanto, a busca e a inserção são um pouco mais lentas em comparação com o HashSet.
+  
+ ---
+
+  LinkedHashSet: O LinkedHashSet é uma implementação da interface Set que mantém a ordem de inserção dos elementos, além de usar uma tabela hash para obter um bom desempenho de busca. Ele é semelhante ao HashSet, mas também mantém uma lista duplamente vinculada que preserva a ordem de inserção. Isso permite que os elementos sejam percorridos na ordem em que foram adicionados. O LinkedHashSet é útil quando você precisa manter a ordem de inserção dos elementos e também ter um bom desempenho de busca.
+
+---
+
 ## Referências
 
 - [Universidade Java - Java Collections](http://www.universidadejava.com.br/java/java-collection/)
@@ -196,3 +218,5 @@ class CompararAnoAutorTitulo implements Comparator<Livro> {
 - [Comparable vs Comparator in Java.]( https://www.geeksforgeeks.org/comparable-vs-comparator-in-java/)
 - [Difference between Comparable and Comparator in Java.]( https://www.javatpoint.com/difference-between-comparable-and-comparator)
 - [Java™ Platform, Standard Edition 17 API Specification - Class Collections.](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html)
+- ["Collections in Java Tutorial." DigitalOcean Community.]( https://www.digitalocean.com/community/tutorials/collections-in-java-tutorial)
+- ["Java™ Platform, Standard Edition 17 API Specification - Class Set." Oracle.](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html)
