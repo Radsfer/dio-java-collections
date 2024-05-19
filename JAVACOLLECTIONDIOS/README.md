@@ -7,7 +7,7 @@ O curso tem como intuito de ensinar mais a respeito do funcionamento e bibliotec
 1. [X] Conhecer a hierarquia do Collections Framework API, entender dos Generics Type, conhecer as interfaces Comparable e Comparator.
 2. [X] List.
 3. [X] Set interface.
-4. [ ] Map inteface.
+4. [X] Map inteface.
 
 ## Resumos
 
