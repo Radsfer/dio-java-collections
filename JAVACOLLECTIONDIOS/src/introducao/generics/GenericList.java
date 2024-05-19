@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class GenericList {
+    @SuppressWarnings({ "rawtypes", "unchecked" })
     public static void main(String[] args) {
         // Exemplo sem Generics
         List listaSemGenerics = new ArrayList();

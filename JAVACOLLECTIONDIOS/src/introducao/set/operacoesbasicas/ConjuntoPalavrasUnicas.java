@@ -34,7 +34,11 @@ public class ConjuntoPalavrasUnicas {
     }
 
     public void exibirPalavrasUnicas() {
-        System.out.println(palavrasUnicas);
+        if (!palavrasUnicas.isEmpty()) {
+            System.out.println(palavrasUnicas);
+        } else {
+            System.out.println("Conjunto de palavras únicas vazio");
+        }
     }
 
     public static void main(String[] args) {

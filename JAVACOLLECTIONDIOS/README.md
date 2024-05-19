@@ -5,8 +5,8 @@ O curso tem como intuito de ensinar mais a respeito do funcionamento e bibliotec
 ## Conteúdo a ser visto
 
 1. [X] Conhecer a hierarquia do Collections Framework API, entender dos Generics Type, conhecer as interfaces Comparable e Comparator.
-2. [ ] List.
-3. [ ] Set interface.
+2. [X] List.
+3. [X] Set interface.
 4. [ ] Map inteface.
 
 ## Resumos
@@ -208,6 +208,25 @@ Essa interface representa o conceito matemático de um conjunto e é usada para 
 
 ---
 
+### 4. Map
+
+- A interface `Map` é usada para mapear dados na forma de chaves e valores.
+- O `Map` do Java é um objeto que mapeia chaves para valores.
+- Um `Map` não pode conter chaves duplicadas: cada chave pode mapear no máximo um valor.
+- A plataforma Java possui três implementações gerais de Map: `HashMap`, `TreeMap` e `LinkedHashMa`p.
+- As operações básicas do `Map` são: `put` (inserir ou atualizar), `get` (obter), `containsKey` (verificar se contém uma chave), `containsValue` (verificar se contém um valor), `size` (obter o tamanho) e `isEmpty` (verificar se está vazio).
+
+---
+  HashTable é uma implementação antiga da interface Map no Java que é sincronizada e thread-safe, tornando-a adequada para uso em ambientes concorrentes. Ela não permite chaves ou valores nulos e os elementos não são mantidos em uma ordem específica.
+
+---
+  LinkedHashMap, por outro lado, é uma implementação da interface Map que preserva a ordem de inserção dos elementos. Cada elemento possui referências ao próximo e ao anterior, formando uma lista encadeada. Isso permite que os elementos sejam iterados na ordem em que foram inseridos. Além disso, o LinkedHashMap também permite chaves ou valores nulos.
+
+---
+  HashMap é uma implementação da interface Map que não mantém uma ordem específica dos elementos. Ele armazena os elementos internamente usando uma função de hash para melhorar a eficiência das operações de pesquisa e acesso. O HashMap também permite chaves ou valores nulos.
+
+---
+
 ## Referências
 
 - [Universidade Java - Java Collections](http://www.universidadejava.com.br/java/java-collection/)
@@ -220,3 +239,5 @@ Essa interface representa o conceito matemático de um conjunto e é usada para 
 - [Java™ Platform, Standard Edition 17 API Specification - Class Collections.](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html)
 - ["Collections in Java Tutorial." DigitalOcean Community.]( https://www.digitalocean.com/community/tutorials/collections-in-java-tutorial)
 - ["Java™ Platform, Standard Edition 17 API Specification - Class Set." Oracle.](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Set.html)
+- ["Collections in Java Tutorial." DigitalOcean Community.](https://www.digitalocean.com/community/tutorials/collections-in-java-tutorial)
+- ["Java™ Platform, Standard Edition 17 API Specification - Class Map." Oracle.](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Map.html)
